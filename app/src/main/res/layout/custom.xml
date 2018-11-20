@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/animation_list"
+
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/score"
+        android:ems="10"
+        android:gravity="top"
+        android:textColor="#fff700"
+        android:inputType="text"
+        android:minHeight="55dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColorHint="#a75251"
+        android:layout_alignTop="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_height="70dp"
+        android:layout_width="100dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:ems="10"
+        android:gravity="top"
+        android:textStyle="bold"
+        android:textColor="#fff700"
+        android:inputType="text"
+        android:minHeight="55dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textSize="25dp"
+        android:typeface="serif"
+        android:textColorHint="#a75251"
+        android:layout_width="200dp"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="70dp"
+        android:layout_toStartOf="@+id/score" />
+
+</RelativeLayout>

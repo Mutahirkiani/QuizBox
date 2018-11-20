@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/animation_list"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="130dp"
+        android:src="@drawable/com"
+        android:layout_marginTop="35dp"
+        android:id="@+id/imageView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="110dp" />
+
+    <Button
+        android:text="Log in"
+        android:theme="@style/MyButton1"
+        android:id="@+id/signIn"
+        android:background="#ffee06"
+        android:textSize="20dp"
+        android:layout_marginBottom="60dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:textSize="37dp"
+        android:gravity="center"
+        android:textColor="#ffee06"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="Your Account Created Successfully"
+        android:layout_width="360dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+</RelativeLayout>

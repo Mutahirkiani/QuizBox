@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/animation_list"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+    <Button
+        android:text="Friends who attempted"
+        android:theme="@style/MyButton1"
+        android:background="#fff700"
+        android:textSize="15dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/list"
+        android:layout_below="@+id/quiz"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:src="@drawable/search"
+        android:id="@+id/imageView7"
+        android:layout_width="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="13dp"
+        android:layout_above="@+id/profile_image"
+        android:layout_toStartOf="@+id/autoCompleteTextView" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:gravity="top"
+        android:textColor="#fff700"
+        android:inputType="text"
+        android:minHeight="55dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="260dp"
+        android:textSize="17dp"
+        android:textColorHint="#a75251"
+        android:layout_above="@+id/quiz"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginBottom="18dp" />
+
+    <Button
+        android:text="Logout"
+        android:theme="@style/MyButton1"
+        android:id="@+id/logout"
+        android:background="#fff700"
+        android:textSize="19dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/quiz"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/quiz"
+        android:layout_alignTop="@+id/quiz" />
+
+    <Button
+        android:text="Create your Quiz"
+        android:theme="@style/MyButton1"
+        android:id="@+id/quiz"
+        android:background="#fff700"
+        android:textSize="19dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_alignParentStart="true" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:hint="Search"
+        android:contextClickable="true"
+        android:layout_height="43dp"
+        android:layout_width="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/name" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:src="#FFFFFF"
+        app:civ_border_width="2dp"
+        android:layout_marginLeft="10dp"
+        app:civ_border_color="#FF000000"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:layout_toStartOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/name"
+        android:ems="10"
+        android:gravity="left"
+        android:textColor="#fffb00"
+        android:minHeight="55dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_height="40dp"
+        android:layout_width="260dp"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+
+</RelativeLayout>

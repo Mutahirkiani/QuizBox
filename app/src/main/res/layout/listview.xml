@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/animation_list"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list">
+
+    </ListView>
+
+    <Button
+        android:text="Generate Pi chart"
+        android:theme="@style/MyButton1"
+        android:background="#fff700"
+        android:textSize="10dp"
+        android:layout_height="50dp"
+        android:id="@+id/geneate"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:layout_width="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="23dp" />
+
+</RelativeLayout>

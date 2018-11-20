@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/animation_list"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+    <Button
+        android:layout_width="400dp"
+        android:text="Select Image "
+        android:theme="@style/MyButton1"
+        android:id="@+id/select"
+        android:textSize="25dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:background="@drawable/button"
+        android:id="@+id/btn_scan_qr"
+        android:textSize="15dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_toEndOf="@+id/profile_image" />
+
+    <ImageView
+
+        android:background="@drawable/next"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="24dp"
+        android:layout_alignBottom="@+id/btn_scan_qr"
+        android:layout_alignRight="@+id/btn_scan_qr"
+        android:layout_alignEnd="@+id/btn_scan_qr" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:src="#FFFFFF"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:layout_height="150dp"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Upload it"
+        android:theme="@style/MyButton"
+        android:id="@+id/upload"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/select"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
